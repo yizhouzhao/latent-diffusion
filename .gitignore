@@ -1,0 +1,8 @@
+*.pyc
+outputs/*
+data/*
+*.egg-info
+*.ckpt
+logs/*
+.ipynb_checkpoints/*
+lightning_logs/*

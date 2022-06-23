@@ -38,7 +38,7 @@ class LSUNBase(Dataset):
 
     def __getitem__(self, i):
         example = dict((k, self.labels[k][i]) for k in self.labels)
-        image = Image.open(example["file_path_"])
+        image = Image.open("./" + example["file_path_"])
         if not image.mode == "RGB":
             image = image.convert("RGB")
 
